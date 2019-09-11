@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  api:
+    restart: always
+    build: ../petbackend
+    container_name: pet-backend
+    ports:
+      - "8080:8080"
+  angular-ui:
+      restart: always
+      build: ../../front-workspace/pet-frontend/
+      container_name: pet-frontend
+      volumes: 
+        - '../../front-workspace/pet-frontend/src/app' 
+      ports: 
+        - "80:80"
