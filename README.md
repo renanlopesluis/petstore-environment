@@ -3,7 +3,7 @@ A simple Docker Compose file to set Pet Backend and Pet Frontend on Docker Conta
 
 **Features**
 - Springboot service configuration;
-- Angular service configuration
+- Angular service configuration.
 
 **Make sure**
 - Docker and Docker Compose should be installed;
